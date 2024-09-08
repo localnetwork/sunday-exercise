@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  color: #fff;
+}
+p {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-profile {
+  background-color: black;
+  display: flex;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.header-profile .content-left {
+  max-width: 40%;
+}
+
+.header-profile .content-right {
+  max-width: 60%;
+}
+.header-profile .profile-image {
+  padding: 0 50px 30px 0;
+}
+.header-profile .profile-image img {
+  min-height: 300px;
+  object-fit: cover;
+}
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 40px;
+}
+.profile-section {
+  font-size: 30px;
+}
+
+.profile-google {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.navbar-toggle {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+.navbar-toggle span {
+  min-height: 2px;
+  background-color: red;
+  width: 50px;
+  display: block;
+}
+.navbar {
+  position: relative;
+}
+
+.navbar-menu {
+  background-color: #46ffd380;
+  padding: 15px;
+  position: absolute;
+  min-width: 300px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.navbar-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transition: all ease 0.3s;
+  transform: translateY(0);
+}

@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Sample</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-toggle" onClick="toggleFunction()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="navbar-menu">
+          <h2>Subjects:</h2>
+          <div>
+            <div>-Networking 1</div>
+            <div>- WebDev</div>
+            <div>-ApplicationDev</div>
+          </div>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="content-left w-full">
+          <div class="profile-image">
+            <img src="https://via.placeholder.com/1920x1200" />
+          </div>
+        </div>
+        <div class="content-right w-full">
+          <div class="profile-name text-center">
+            <p>Sumagang James A.</p>
+          </div>
+          <div class="profile-section text-center">BSIT-3D</div>
+
+          <div class="profile-google">
+            <img src="./images/google.svg" width="20" height="20" />
+            james@testgmail.com
+          </div>
+          <div class="profile-google">
+            <img src="./images/fb.svg" width="20" height="20" />
+            james@testgmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let toggleOpen = false; // initial state is closed
+
+      const toggleFunction = () => {
+        const navbarMenu = document.querySelector(".navbar-menu");
+        console.log("navbar-menu", navbarMenu);
+
+        if (toggleOpen) {
+          navbarMenu.classList.remove("open"); // hide menu
+        } else {
+          navbarMenu.classList.add("open"); // show menu
+        }
+
+        toggleOpen = !toggleOpen; // toggle the state
+      };
+    </script>
+  </body>
+</html>
